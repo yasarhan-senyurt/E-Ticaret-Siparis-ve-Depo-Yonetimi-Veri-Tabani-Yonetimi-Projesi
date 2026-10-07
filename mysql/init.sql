@@ -1,0 +1,3 @@
+-- E-Ticaret Sipariş ve Depo Yönetimi
+-- MySQL veritabanı başlangıç dosyası.
+-- Projenin 8 tablosu ilerleyen aşamalarda bu dosyada oluşturulacaktır.
