@@ -84,6 +84,7 @@ Siparişte bulunan ürün, ürünün miktarı ve sipariş oluşturulduğu andaki
 Kullanıcıların teslimat adreslerini tutar.
 
 Bir kullanıcı sisteme birden fazla adres ekleyebilir ve sipariş oluştururken kullanacağı teslimat adresini seçebilir.
+
 Docker Yapısı ve Proje Mimarisi;
 
 Proje, uygulama ve veritabanı katmanlarının birbirinden ayrıldığı bir mimari yapıda geliştirilecektir. Çalışma ortamının izole ve taşınabilir olması amacıyla Docker kullanılacaktır.
