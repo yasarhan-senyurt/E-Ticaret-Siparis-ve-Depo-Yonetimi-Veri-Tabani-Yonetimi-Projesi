@@ -1,7 +1,10 @@
 E-Ticaret Sipariş ve Depo Yönetimi
+
 Proje Hakkında;
+
 Bu proje, bir e-ticaret sisteminde kullanıcıların ürünleri inceleyebilmesi, ürünleri sepetlerine ekleyebilmesi ve sipariş oluşturabilmesi amacıyla geliştirilecek bir E-Ticaret Sipariş ve Depo Yönetimi uygulamasıdır. Proje kapsamında veritabanı işlemleri ile kullanıcı arayüzü birbirinden ayrılmış bir yapı içerisinde geliştirilecektir. Uygulama tarafında Laravel, veritabanı tarafında ise MySQL kullanılacaktır. Projenin geliştirme ve çalışma ortamlarının daha düzenli, taşınabilir ve birbirinden izole şekilde yönetilebilmesi amacıyla Docker kullanılacaktır. Uygulama, iki ayrı container üzerinden çalışacak şekilde planlanmıştır.
 Kullanılan Teknolojiler;
+
 Laravel: Uygulama ve kullanıcı arayüzünün geliştirilmesi
 
 PHP: Laravel uygulamasının programlama dili
@@ -11,6 +14,7 @@ MySQL: İlişkisel veritabanı yönetim sistemi
 Docker: Uygulama ve veritabanı çalışma ortamlarının oluşturulması
 
 Git / GitHub: Projenin sürüm kontrolü ve paylaşılması
+
 Projenin İşleyiş Hikâyesi;
 
 Sistemin işleyişi bir kullanıcının e-ticaret platformuna giriş yapmasıyla başlamaktadır.
@@ -28,6 +32,7 @@ Sipariş içerisindeki her ürün için ayrıca ürünün sipariş verildiği an
 Sipariş oluşturulmasının ardından ürünün stok miktarı güncellenerek mevcut stok takip edilir. Siparişin durumu sistem üzerinden takip edilebilir ve sipariş süreci farklı durumlara göre yönetilebilir.
 
 Bu şekilde sistem; ürünün sisteme eklenmesinden, kullanıcının ürünü sepete eklemesine, sipariş oluşturmasına ve stok miktarının güncellenmesine kadar olan temel e-ticaret sürecini veritabanı üzerinden yönetmeyi amaçlamaktadır.
+
 Veritabanı Yapısı;
 
 Projede toplam 8 adet ilişkisel SQL tablosu kullanılacaktır.
@@ -86,6 +91,7 @@ Proje, uygulama ve veritabanı katmanlarının birbirinden ayrıldığı bir mim
 Proje içerisinde iki container bulunacaktır:
 
 Laravel Container: Uygulamanın ve kullanıcı arayüzünün çalıştığı katmandır.
+
 MySQL Container: Projenin veritabanının ve 8 SQL tablosunun bulunduğu katmandır.
 
 İki container aynı Docker ağı içerisinde çalışacak ve birbirleriyle bu ağ üzerinden iletişim kuracaktır. Laravel container'ı, veritabanı işlemlerini gerçekleştirmek için MySQL container'ına bağlanacaktır.
